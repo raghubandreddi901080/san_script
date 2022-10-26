@@ -29,6 +29,11 @@ jobs:
       - name: running script
         run: sh zoning.sh
 
+      - name: testing
+        run: |
+          pwd
+          ls -l
+
       - name: commit
         run: |
           git add output.txt
