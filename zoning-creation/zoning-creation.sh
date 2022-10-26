@@ -16,6 +16,6 @@ done
 
 echo "============================================================" >> zoning-creation/output.txt
 
-cfg save >> zoning-creation/output.txt
+echo "cfg save" >> zoning-creation/output.txt
 
-cfg enable >> zoning-creation/output.txt
+echo "cfg enable" >> zoning-creation/output.txt
