@@ -10,7 +10,7 @@ done
 
 echo "============================================================" >> zoning-creation/output.txt
 
-cat zoning-creation/input.txt | while read column1 column2 column3 ; do
+cat zoning-creation/input.txt | while read column1 column2 column3 column4 ; do
     echo "cfgadd "\"$column4\", \"$column1\_$column3\""" >> zoning-creation/output.txt
 done
 
