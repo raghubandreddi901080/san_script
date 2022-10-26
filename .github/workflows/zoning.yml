@@ -20,7 +20,7 @@ jobs:
 
       - name: commit
         run: |
-
+          rm -rf output.txt
           echo "The End" >> input.txt
           git add .
           git commit -m "Removing output file"
