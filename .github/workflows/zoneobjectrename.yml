@@ -2,7 +2,8 @@ name : Performing Zoning Steps
 
 on:
   push:
-    branches: main
+    branches: 
+      - main
     paths:
       - zoneobjectrename/**
 
