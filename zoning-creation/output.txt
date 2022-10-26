@@ -1,9 +1,0 @@
-alicreate "serverA", "50:56:55:55"
-alicreate "serverB", "78:78:69:45"
-alicreate "serverC", "24:35:68:98"
-alicreate "serverD", "25:25:27:25"
-============================================================
-zonecreate "serverA_50:56:55:55", "serverA;50:56:55:55"
-zonecreate "serverB_78:78:69:45", "serverB;78:78:69:45"
-zonecreate "serverC_24:35:68:98", "serverC;24:35:68:98"
-zonecreate "serverD_25:25:27:25", "serverD;25:25:27:25"
