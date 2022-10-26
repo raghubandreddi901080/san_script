@@ -1,0 +1,16 @@
+name : Performing Zoning Steps
+
+on:
+  push:
+    branches: main
+
+jobs:
+  Running_Zoning_Script:
+    name: Uploading Data
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Formatting zoning steps
+        run : sh zoning.sh
