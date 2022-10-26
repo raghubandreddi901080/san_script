@@ -13,6 +13,11 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
       - name: commit
         run: |
           rm -rf output.txt
@@ -23,10 +28,6 @@ jobs:
       - name: running script
         run: sh zoning.sh
 
-      - name: setup git config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
       - name: commit
         run: |
           git add output.txt
