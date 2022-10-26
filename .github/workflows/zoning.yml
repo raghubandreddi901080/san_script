@@ -13,6 +13,13 @@ jobs:
         with:
           fetch-depth: 0
 
+      - name: commit
+        run: |
+          rm -rf output.txt
+          git add .
+          git commit -m "Removing output file"
+          git push origin main
+
       - name: running script
         run: sh zoning.sh
 
