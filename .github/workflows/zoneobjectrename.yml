@@ -21,16 +21,16 @@ jobs:
 
       - name: commit
         run: |
-          rm -rf output.txt
+          rm -rf zoneobjectrename/output.txt
           git add .
           git commit -m "Removing output file"
           git push origin main
 
       - name: running script
-        run: sh zoneobjectrename.sh
+        run: sh zoneobjectrename/zoneobjectrename.sh
 
       - name: commit
         run: |
-          git add output.txt
+          git add zoneobjectrename/output.txt
           git commit -m "Final output data"
           git push origin main
