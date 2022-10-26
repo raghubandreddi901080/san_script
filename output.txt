@@ -1,4 +1,0 @@
-alicreate "serverA", "50:56:55:55"
-alicreate "serverB", "78:78:69:45"
-alicreate "serverC", "24:35:68:98"
-alicreate "serverD", "25:25:27:25The End"
