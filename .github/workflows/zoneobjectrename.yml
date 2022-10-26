@@ -4,7 +4,7 @@ on:
   push:
     branches: main
     paths:
-      - zoneobjectrename
+      - "zoneobjectrename"
 
 jobs:
   Running_Zoning_Script:
@@ -28,7 +28,7 @@ jobs:
           git push origin main
 
       - name: running script
-        run: sh zoning.sh
+        run: sh zoneobjectrename.sh
 
       - name: commit
         run: |
