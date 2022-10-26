@@ -31,6 +31,6 @@ jobs:
 
       - name: commit
         run: |
-          git add zoneobjectrename/output.txt
+          git add output.txt
           git commit -m "Final output data"
           git push origin main
