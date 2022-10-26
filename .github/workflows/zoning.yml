@@ -27,3 +27,13 @@ jobs:
 
       - name: View the output file content
         run : cat /home/runner/work/san_script/san_script/output.txt
+
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+      - name: commit
+        run: |
+          git add output.txt
+          git commit -m "Final output data"
+          git push origin main
