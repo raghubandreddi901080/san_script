@@ -16,6 +16,8 @@ jobs:
         run: pwd
       - name: Checking content
         run: ls -l
+      - name: running command
+        run: cat zoning_info.txt | while IFS=' ' read i j ; do echo -e "alicreate \x22$i\x22, \x22$j\x22" ; done
       - name: Formatting zoning steps
         run : sh zoning.sh
       - name: View the output file content

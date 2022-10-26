@@ -1,4 +1,5 @@
 #!/bin/bash
+
 IN_FILE='./zoning_info.txt'
 while read -ra LINE
 do
