@@ -2,10 +2,8 @@ name : Performing Zoning Steps
 
 on:
   push:
-    branches: 
-      - main
     paths:
-      - 'input.txt'
+      - 'zoneobjectrename/**'
 
 jobs:
   Running_Zoning_Script:
