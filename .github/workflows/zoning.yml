@@ -3,6 +3,8 @@ name : Performing Zoning Steps
 on:
   push:
     branches: main
+    paths:
+      - zoneobjectrename
 
 jobs:
   Running_Zoning_Script:
