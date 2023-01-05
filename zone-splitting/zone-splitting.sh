@@ -1,5 +1,3 @@
-#!/bin/bash
-
 cat zone-splitting/input.txt | while read column1 column2 column3 column4 column5 ; do
     SER_NAME=$(echo $column1 | sed 's/_ *..//')
     STO_NAME1=$(echo $column3 | sed 's/G *..//')
