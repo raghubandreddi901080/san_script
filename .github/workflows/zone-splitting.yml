@@ -1,0 +1,36 @@
+name : Preparing Zone splitting steps
+
+on:
+  push:
+    paths:
+      - 'zone-splitting/**'
+
+jobs:
+  Running_Zoning_Script:
+    name: Uploading Data
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: commit
+        run: |
+          rm -rf zone-splitting/output.txt
+          git add .
+          git commit -m "Removing output file"
+          git push origin main
+
+      - name: running script
+        run: sh zone-splitting/zone-splitting.sh
+
+      - name: commit
+        run: |
+          git add zone-splitting/output.txt
+          git commit -m "Final output data"
+          git push origin main
