@@ -1,0 +1,8 @@
+zonecreate "FRDC2PWHCS001_471132_3D", "FRDC2PWHCS001_P0;G4_471132_3D"
+cfgadd "Main_Fabric_A", "FRDC2PWHCS001_471132_3D"
+cfg enable "Main_Fabric_A"
+
+zoneremove "FRDC2PWHCS001_471132_3C_3D", "G4_471132_3D"
+cfg enable "Main_Fabric_A"
+zoneobjectrename "FRDC2PWHCS001_471132_3C_3D", "FRDC2PWHCS001_471132_3C"
+============================================================
