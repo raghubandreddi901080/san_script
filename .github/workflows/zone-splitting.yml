@@ -6,7 +6,7 @@ on:
       - 'zone-splitting/**'
 
 jobs:
-  Running_Zoning_Script:
+  Zone_Splitting_Script:
     name: Uploading Data
     runs-on: self-hosted
     steps:
