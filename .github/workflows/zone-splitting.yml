@@ -32,5 +32,5 @@ jobs:
       - name: commit
         run: |
           git add zone-splitting/output.txt
-          git commit -m "Final output data"
+          git commit -m "Final zone splitting output data"
           git push origin main
