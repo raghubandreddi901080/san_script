@@ -1,0 +1,16 @@
+zonecreate "DEWSTTWCK402N2_TO_471132_2B", "DEWSTTWCK402N2_P1;G4_471132_2B"
+cfgadd "Main_Fabric_B", "DEWSTTWCK402N2_TO_471132_2B"
+cfg enable "Main_Fabric_B"
+
+zoneremove "DEWSTTWCK402N2_471132_2A_2B", "G4_471132_2B"
+cfg enable "Main_Fabric_B"
+zoneobjectrename "DEWSTTWCK402N2_471132_2A_2B", "DEWSTTWCK402N2_TO_471132_2A"
+============================================================
+zonecreate "_TO_", ";"
+cfgadd "", "_TO_"
+cfg enable ""
+
+zoneremove "", ""
+cfg enable ""
+zoneobjectrename "", "_TO_"
+============================================================
