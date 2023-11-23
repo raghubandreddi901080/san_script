@@ -27,7 +27,7 @@ jobs:
           git push origin main
 
       - name: running script
-        run: sh zoning-creation/zoning-creation.sh
+        run: bash zoning-creation/zoning-creation.sh
 
       - name: commit
         run: |
