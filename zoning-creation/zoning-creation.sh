@@ -20,7 +20,7 @@ while IFS= read -r line; do
         echo "$line" >> zoning-creation/output.txt
     else
         read column1 column2 column3 column4 <<< "$line"
-        echo "zonecreate "\"$column1\_$column3\", \"$column1\;$column3\""" >> zoning-creation/output.txt
+        echo "zonecreate "\"$column1\_TO_$column3\", \"$column1\;$column3\""" >> zoning-creation/output.txt
     fi
 done < zoning-creation/input.txt
 
@@ -31,7 +31,7 @@ while IFS= read -r line; do
         echo "$line" >> zoning-creation/output.txt
     else
         read column1 column2 column3 column4 <<< "$line"
-        echo "cfgadd "\"$column4\", \"$column1\_$column3\""" >> zoning-creation/output.txt
+        echo "cfgadd "\"$column4\", \"$column1\_TO_$column3\""" >> zoning-creation/output.txt
     fi
 done < zoning-creation/input.txt
 
