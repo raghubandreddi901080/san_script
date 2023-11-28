@@ -1,0 +1,17 @@
+alicreate "DEWST2UVU301_P0", "51:40:2e:c0:12:3e:a5:ac"
+alicreate "DEWST2UVU301_P0", "51:40:2e:c0:12:3e:a5:ac"
+alicreate "DEWST2UVU301_P1", "51:40:2e:c0:12:3e:a5:ae"
+alicreate "DEWST2UVU301_P1", "51:40:2e:c0:12:3e:a5:ae"
+============================================================
+zonecreate "DEWST2UVU301_P0_TO_HDSC-31001-CT0-FC0", "DEWST2UVU301_P0;HDSC-31001-CT0-FC0"
+zonecreate "DEWST2UVU301_P0_TO_HDSC-31001-CT1-FC0", "DEWST2UVU301_P0;HDSC-31001-CT1-FC0"
+zonecreate "DEWST2UVU301_P1_TO_HDSC-31001-CT0-FC1", "DEWST2UVU301_P1;HDSC-31001-CT0-FC1"
+zonecreate "DEWST2UVU301_P1_TO_HDSC-31001-CT1-FC1", "DEWST2UVU301_P1;HDSC-31001-CT1-FC1"
+============================================================
+cfgadd "VMware-F1", "DEWST2UVU301_P0_TO_HDSC-31001-CT0-FC0"
+cfgadd "VMware-F1", "DEWST2UVU301_P0_TO_HDSC-31001-CT1-FC0"
+cfgadd "VMware-F2", "DEWST2UVU301_P1_TO_HDSC-31001-CT0-FC1"
+cfgadd "VMware-F2", "DEWST2UVU301_P1_TO_HDSC-31001-CT1-FC1"
+============================================================
+cfg save
+cfg enable
