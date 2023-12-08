@@ -1,0 +1,17 @@
+alicreate "HPEX-OFF2-TUV-0102-P0", "51:40:2e:c0:12:3e:a5:a4"
+alicreate "HPEX-OFF2-TUV-0102-P0", "51:40:2e:c0:12:3e:a5:a4"
+alicreate "HPEX-OFF2-TUV-0118-P0", "51:40:2e:c0:12:3e:a4:d8"
+alicreate "HPEX-OFF2-TUV-0118-P0", "51:40:2e:c0:12:3e:a4:d8"
+============================================================
+zonecreate "HPEX-OFF2-TUV-0102-P0_TO_HDSC-31001-CT0-FC0", "HPEX-OFF2-TUV-0102-P0;HDSC-31001-CT0-FC0"
+zonecreate "HPEX-OFF2-TUV-0102-P0_TO_HDSC-31001-CT1-FC0", "HPEX-OFF2-TUV-0102-P0;HDSC-31001-CT1-FC0"
+zonecreate "HPEX-OFF2-TUV-0118-P0_TO_HDSC-31001-CT0-FC0", "HPEX-OFF2-TUV-0118-P0;HDSC-31001-CT0-FC0"
+zonecreate "HPEX-OFF2-TUV-0118-P0_TO_HDSC-31001-CT1-FC0", "HPEX-OFF2-TUV-0118-P0;HDSC-31001-CT1-FC0"
+============================================================
+cfgadd "", "HPEX-OFF2-TUV-0102-P0_TO_HDSC-31001-CT0-FC0"
+cfgadd "", "HPEX-OFF2-TUV-0102-P0_TO_HDSC-31001-CT1-FC0"
+cfgadd "", "HPEX-OFF2-TUV-0118-P0_TO_HDSC-31001-CT0-FC0"
+cfgadd "", "HPEX-OFF2-TUV-0118-P0_TO_HDSC-31001-CT1-FC0"
+============================================================
+cfg save
+cfg enable
