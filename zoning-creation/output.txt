@@ -1,0 +1,17 @@
+alicreate "SSUNW_OFF2_TUV_0010_P2", "0000000"
+alicreate "SUNW_OFF2_TUV_0010_P3", "0000000"
+alicreate "SUNW_OFF2_TUV_009_P2", "0000000"
+alicreate "SUNW_OFF2_TUV_009_P3", "0000000"
+============================================================
+zonecreate "SSUNW_OFF2_TUV_0010_P2_TO_HDSC_31003_CT0_FC2", "SSUNW_OFF2_TUV_0010_P2;HDSC_31003_CT0_FC2"
+zonecreate "SUNW_OFF2_TUV_0010_P3_TO_HDSC_31003_CT1_FC2", "SUNW_OFF2_TUV_0010_P3;HDSC_31003_CT1_FC2"
+zonecreate "SUNW_OFF2_TUV_009_P2_TO_HDSC_31003_CT0_FC2", "SUNW_OFF2_TUV_009_P2;HDSC_31003_CT0_FC2"
+zonecreate "SUNW_OFF2_TUV_009_P3_TO_HDSC_31003_CT1_FC2", "SUNW_OFF2_TUV_009_P3;HDSC_31003_CT1_FC2"
+============================================================
+cfgadd "OFF_FABRIC_PROD_B", "SSUNW_OFF2_TUV_0010_P2_TO_HDSC_31003_CT0_FC2"
+cfgadd "OFF_FABRIC_PROD_B", "SUNW_OFF2_TUV_0010_P3_TO_HDSC_31003_CT1_FC2"
+cfgadd "OFF_FABRIC_PROD_B", "SUNW_OFF2_TUV_009_P2_TO_HDSC_31003_CT0_FC2"
+cfgadd "OFF_FABRIC_PROD_B", "SUNW_OFF2_TUV_009_P3_TO_HDSC_31003_CT1_FC2"
+============================================================
+cfg save
+cfg enable
