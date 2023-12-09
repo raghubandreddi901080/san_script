@@ -1,0 +1,11 @@
+alicreate "SUNW_OFF2_TUV_0010_P2", "21:01:00:1b:32:aa:d4:73"
+alicreate "SUNW_OFF2_TUV_0010_P3", "21:00:00:1b:32:8a:d4:73"
+============================================================
+zonecreate "SUNW_OFF2_TUV_0010_P2_TO_HDSC_31001_CT0_FC2", "SUNW_OFF2_TUV_0010_P2;HDSC_31001_CT0_FC2"
+zonecreate "SUNW_OFF2_TUV_0010_P3_TO_HDSC_31001_CT1_FC2", "SUNW_OFF2_TUV_0010_P3;HDSC_31001_CT1_FC2"
+============================================================
+cfgadd "OFF_FABRIC_PROD_B", "SUNW_OFF2_TUV_0010_P2_TO_HDSC_31001_CT0_FC2"
+cfgadd "OFF_FABRIC_PROD_B", "SUNW_OFF2_TUV_0010_P3_TO_HDSC_31001_CT1_FC2"
+============================================================
+cfg save
+cfg enable
