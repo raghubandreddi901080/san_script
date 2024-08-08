@@ -1,0 +1,47 @@
+alicreate "ESXP-OFF-33001-P0", "10:00:b4:7a:f1:d3:2c:51"
+alicreate "ESXP-OFF-33001-P0", "10:00:b4:7a:f1:d3:2c:51"
+alicreate "ESXP-OFF-33002-P0", "10:00:b4:7a:f1:d3:2c:b7"
+alicreate "ESXP-OFF-33002-P0", "10:00:b4:7a:f1:d3:2c:b7"
+
+alicreate "ESXP-OFF-33001-P1", "10:00:b4:7a:f1:d3:2c:76"
+alicreate "ESXP-OFF-33001-P1", "10:00:b4:7a:f1:d3:2c:76"
+alicreate "ESXP-OFF-33002-P1", "10:00:b4:7a:f1:d3:2c:4f"
+alicreate "ESXP-OFF-33002-P1", "10:00:b4:7a:f1:d3:2c:4f"
+
+
+
+
+
+============================================================
+zonecreate "ESXP-OFF-33001-P0_TO_hdsc-31020-CT0-FC0", "ESXP-OFF-33001-P0;hdsc-31020-CT0-FC0"
+zonecreate "ESXP-OFF-33001-P0_TO_hdsc-31020-CT1-FC0", "ESXP-OFF-33001-P0;hdsc-31020-CT1-FC0"
+zonecreate "ESXP-OFF-33002-P0_TO_hdsc-31021-CT0-FC0", "ESXP-OFF-33002-P0;hdsc-31021-CT0-FC0"
+zonecreate "ESXP-OFF-33002-P0_TO_hdsc-31021-CT1-FC0", "ESXP-OFF-33002-P0;hdsc-31021-CT1-FC0"
+
+zonecreate "ESXP-OFF-33001-P1_TO_hdsc-31020-CT0-FC1", "ESXP-OFF-33001-P1;hdsc-31020-CT0-FC1"
+zonecreate "ESXP-OFF-33001-P1_TO_hdsc-31020-CT1-FC1", "ESXP-OFF-33001-P1;hdsc-31020-CT1-FC1"
+zonecreate "ESXP-OFF-33002-P1_TO_hdsc-31021-CT0-FC1", "ESXP-OFF-33002-P1;hdsc-31021-CT0-FC1"
+zonecreate "ESXP-OFF-33002-P1_TO_hdsc-31021-CT1-FC1", "ESXP-OFF-33002-P1;hdsc-31021-CT1-FC1"
+
+
+
+
+
+============================================================
+cfgadd "VMware-F5", "ESXP-OFF-33001-P0_TO_hdsc-31020-CT0-FC0"
+cfgadd "VMware-F5", "ESXP-OFF-33001-P0_TO_hdsc-31020-CT1-FC0"
+cfgadd "VMware-F5", "ESXP-OFF-33002-P0_TO_hdsc-31021-CT0-FC0"
+cfgadd "VMware-F5", "ESXP-OFF-33002-P0_TO_hdsc-31021-CT1-FC0"
+
+cfgadd "VMware-F6", "ESXP-OFF-33001-P1_TO_hdsc-31020-CT0-FC1"
+cfgadd "VMware-F6", "ESXP-OFF-33001-P1_TO_hdsc-31020-CT1-FC1"
+cfgadd "VMware-F6", "ESXP-OFF-33002-P1_TO_hdsc-31021-CT0-FC1"
+cfgadd "VMware-F6", "ESXP-OFF-33002-P1_TO_hdsc-31021-CT1-FC1"
+
+
+
+
+
+============================================================
+cfg save
+cfg enable
